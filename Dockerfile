@@ -22,6 +22,7 @@ RUN echo Installed Versions &&\
 
 # configure maven
 ENV MAVEN_HOME /usr/share/maven
+ENV M2_HOME /usr/share/maven
 RUN rm $MAVEN_HOME/conf/settings.xml
 ADD maven/settings.xml $MAVEN_HOME/conf/settings.xml
 
